@@ -390,6 +390,44 @@ textarea {
     margin: 0 3px
 }
 
+.skills {
+    text-align: left; /* Aligns the content to the right side */
+  }
+  
+  .skills__title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .skills__badges {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Aligns sections to the right */
+  }
+  
+  .skills__section {
+    margin-bottom: 20px;
+  }
+  
+  .skills__category {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .skills__badges-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left; /* Aligns badges to the right */
+  }
+  
+  .skills__badges-list img {
+    height: 20px; /* Adjust size as needed */
+    width: auto;
+  }
+  
 .projects__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -888,14 +926,14 @@ textarea {
 }
 
 .main-footer {
-    background: #000;
+    background: #0981c2;
     color: #fff
 }
 
 .main-footer__upper {
     display: flex;
     justify-content: space-between;
-    padding: 8rem 0
+    padding: 7rem 0
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -904,14 +942,14 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 47.5em) {
     .main-footer__upper {
         display: block
     }
 }
 
 .main-footer__row-1 {
-    order: 2
+    order: 2;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -923,7 +961,7 @@ textarea {
 .main-footer__row-2 {
     width: 40%;
     order: 1;
-    max-width: 50rem
+    max-width: fit-content
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -962,7 +1000,7 @@ textarea {
 }
 
 .main-footer__lower a {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
     margin-left: 2px
 }
