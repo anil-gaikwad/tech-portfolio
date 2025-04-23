@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>Anil Gaikwad | Software Engineer</title>
+    <link rel="shortcut icon" href="./assets/png/ag_logo.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/png/ag_logo.png" type="image/x-icon" />
+    <title>Anil Gaikwad - Portfolio</title>
     <meta name="description" content="Software Engineer with about 3 years of backend development experience using Python, FastAPI, Django, Serverless, and AWS. Passionate about creating scalable solutions, optimizing performance, and leveraging cutting-edge technologies to deliver high-quality products." />
     <meta name="author" content="Anil Gaikwad" />
     <meta name="google-site-verification" content="wX2xdkxqjrC4rA2EM-9bbaVpiEEFG8ae5azgeZDd-oo" />
 
-    <meta property="og:title" content="Anil Gaikwad | Software Engineer" />
+    <meta property="og:title" content="Anil Gaikwad" />
     <meta property="og:site_name" content="Anil Gaikwad Portfolio Website" />
     <meta property="og:url" content="https://www.anilagaikwad.com/" />
     <meta property="og:description" content="Software Engineer with about 3 years of backend development experience using Python, FastAPI, Django, Serverless, and AWS. Passionate about creating scalable solutions, optimizing performance, and leveraging cutting-edge technologies to deliver high-quality products." />
@@ -42,6 +42,13 @@
     <header class="header">
         <nav class="nav container">
             <a href="/" class="nav__logo">Anil Gaikwad</a>
+            <div id="burger-container">
+                <div id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div class="nav__menu">
                 <a href="#home" class="nav__link">Home</a>
                 <a href="#about" class="nav__link">About</a>
@@ -55,16 +62,14 @@
         <section id="home" class="home-hero">
             <div class="container">
                 <div class="home-hero__content">
-                    <h1 class="home__title">
-                        <span class="static-text">Hi, I'm</span>
-                        <span class="typing-text" id="typing-text"></span>
-                    </h1>
-                    <div class="home-hero__info">
-                        <p class="text-primary animate-fade-in">
-                            A Results-Oriented Software Engineer developing and optimizing backend and frontend systems to drive the success of high-quality products and applications
-                        </p>
+                    <div class="typing-container">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="typing" id="typing-text"></span>
                     </div>
-                    <div class="home-hero__cta animate-fade-in">
+                    <p class="text-primary">
+                        A Results-Oriented Software Engineer developing and optimizing backend and frontend systems to drive the success of high-quality products and applications
+                    </p>
+                    <div class="home-hero__cta">
                         <a href="#projects" class="btn btn--bg btn--large">View Projects</a>
                         <a href="./assets/pdf/resume.pdf" class="btn btn--outline btn--large" download="Anil_Gaikwad_Resume.pdf">Download Resume</a>
                     </div>
@@ -122,17 +127,23 @@
                                 <div class="skill-item">
                                     <span class="skill-item__name">SQL</span>
                                 </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">C</span>
+                                </div>
                             </div>
                         </div>
 
                         <div class="skill-category">
-                            <h3 class="skill-category__title">Frameworks</h3>
+                            <h3 class="skill-category__title">Frameworks & Libraries</h3>
                             <div class="skill-category__items">
                                 <div class="skill-item">
                                     <span class="skill-item__name">FastAPI</span>
                                 </div>
                                 <div class="skill-item">
                                     <span class="skill-item__name">Django</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">Serverless</span>
                                 </div>
                                 <div class="skill-item">
                                     <span class="skill-item__name">Node.js</span>
@@ -152,6 +163,12 @@
                                 <div class="skill-item">
                                     <span class="skill-item__name">Terraform</span>
                                 </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">Git</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">Jenkins</span>
+                                </div>
                             </div>
                         </div>
 
@@ -169,6 +186,37 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category__title">Web Technologies</h3>
+                            <div class="skill-category__items">
+                                <div class="skill-item">
+                                    <span class="skill-item__name">JavaScript</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">React</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">HTML</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category__title">APIs</h3>
+                            <div class="skill-category__items">
+                                <div class="skill-item">
+                                    <span class="skill-item__name">REST API</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-item__name">GraphQL</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -251,7 +299,7 @@
                                 An intelligent chatbot powered by natural language processing and machine learning. The system provides personalized responses, handles complex queries, and learns from user interactions to improve over time.
                             </p>
                             <div class="projects__row-content-btns">
-                                <a class="btn btn--med btn--theme" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                                <a class="btn btn--med btn--theme" href="https://github.com/anil-gaikwad/ai-chatbot-assistant" target="_blank" rel="noopener noreferrer">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -266,7 +314,7 @@
                                 A full-stack e-commerce platform with features like product management, shopping cart, payment integration, and order tracking. Built with modern technologies for optimal performance and user experience.
                             </p>
                             <div class="projects__row-content-btns">
-                                <a class="btn btn--med btn--theme" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                                <a class="btn btn--med btn--theme" href="https://github.com/anil-gaikwad/ecommerce-platform" target="_blank" rel="noopener noreferrer">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -279,26 +327,26 @@
                 <h2 class="heading-primary">Get In Touch</h2>
                 <div class="contact__content">
                     <div class="contact__info">
-                        <h3 class="contact__title">Let's Connect</h3>
+<!--                        <h3 class="contact__title">Let's Connect</h3>-->
                         <p class="contact__description">
                             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
                         </p>
                         <div class="contact__details">
                             <div class="contact__detail">
-                                <img src="./assets/svg/email.svg" alt="Email" class="contact__icon">
-                                <a href="mailto:your.email@example.com" class="contact__link">your.email@example.com</a>
+                                <img src="./assets/png/gmail.png" alt="Email" class="contact__icon">
+                                <a href="mailto:gaikwad.akumar@gmail.com" class="contact__link">gaikwad.akumar@gmail.com</a>
                             </div>
                             <div class="contact__detail">
-                                <img src="./assets/svg/location.svg" alt="Location" class="contact__icon">
+                                <img src="./assets/png/location.png" alt="Location" class="contact__icon">
                                 <span class="contact__text">Bangalore, India</span>
                             </div>
                         </div>
                         <div class="contact__social">
                             <a href="https://linkedin.com/in/anil-gaikwad-25048416b" class="contact__social-link" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/svg/linkedin.svg" alt="LinkedIn">
+                                <img src="./assets/svg/linkedin-dark.svg" alt="LinkedIn">
                             </a>
                             <a href="https://github.com/anil-gaikwad" class="contact__social-link" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/svg/github.svg" alt="GitHub">
+                                <img src="./assets/svg/github-dark.svg" alt="GitHub">
                             </a>
                         </div>
                     </div>
@@ -315,7 +363,7 @@
                             <label for="message" class="contact__form-label">Message</label>
                             <textarea id="message" name="message" class="contact__form-textarea" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn--bg btn--large">Send Message</button>
+                        <button type="submit" class="btn btn--bg">Send Message</button>
                     </form>
                 </div>
             </div>

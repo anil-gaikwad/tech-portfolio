@@ -36,3 +36,13 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+const burger = document.getElementById('burger');
+const navMenu = document.querySelector('.nav__menu');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+});
+
