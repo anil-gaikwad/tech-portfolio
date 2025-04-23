@@ -1059,7 +1059,7 @@ body {
     .btn--large {
         padding: 1rem 2rem;
         font-size: 1.5rem;
-        min-width: 165%
+        min-width: 150%
     }
 
     .nav__logo {
